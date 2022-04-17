@@ -1,37 +1,4 @@
-<?php session_start(); ?>
-<!DocTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken page</title>
-
-    <!-- boxicon link -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- import css -->
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- favicon (title of page image) -->
-    <link rel="icon" href="/images/favicon.JPG" sizes="32x32" type="image/JPG">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60=" crossorigin "anonymous"></script>
-    <script>
-        $(function() {
-            $('#footer').load("./assets/php/footer.php");
-        });
-        $(function() {
-            $('#header').load("./assets/php/header.php");
-        });
-    </script>
-</head>
-
-<body>
-    <!-- Header -->
-    <div id="header"></div>
-    <!--END OF HEADER-->
+<?php include('./assets/php/header.php'); ?>
 
     <main>
         <!-- details of single product  -->
@@ -39,17 +6,15 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="./images/Chicken.jpg" width="100%" id="ProductImg">
+                    <img src="./images/CocaCola.jpg" width="100%" id="ProductImg">
                 </div>
 
 
                 <div class="col-2">
-                    <h2><a href="./index.php">Home</a>/<a href="./p2_MeatAisle.php">Meat</a>/Chicken</h2>
-                    <h1>Whole Chicken</h1>
-                    <h4>$13.46/unit</h4>
-                    <br>
-                    <h4 style="display: none;" id="unitPrice">13.46</h4>
-                    <h4 class="product-price">$13.46 /<span>unit</span>
+                    <h2><a href="./index.php">Home</a>/<a href="./p2_WaterAisle.php">Drinks</a>/Coca Cola</h2>
+                    <h1>Coca Cola</h1>
+                    <h4 style="display: none;" id="unitPrice">7.29</h4>
+                    <h4 class="product-price">$7.29 /<span>pack</span>
                     </h4>
                     <br>
                     <input id="quantity" type="number" min="0" value="1" onchange="updatePrice();saveValue(this)">
@@ -79,10 +44,10 @@
 
                 <div class="col-5">
                     <div class="product">
-                        <a href="./p3_Steak.php">
-                            <img src="./images/Steak.jpg" alt="Steak">
-                            <h4 class="aisle-text">AAA Angus Steak</h4>
-                            <p class="aisle-text">$36.50/kg</p>
+                        <a href="./p3_Water.php">
+                            <img src="./images/WaterFiji.jpg" alt="Water">
+                            <h4 class="aisle-text">Fiji Water</h4>
+                            <p class="aisle-text">$4.99/unit</p>
                         </a>
                     </div>
                 </div>
@@ -90,15 +55,13 @@
 
                 <div class="col-5">
                     <div class="product">
-                        <a href="./p3_Ribs.php">
-                            <img src="./images/Ribs.jpg" alt="Pork Ribs">
-                            <h4 class="aisle-text">Pork Ribs</h4>
-                            <p class="aisle-text">$7.49/pack</p>
+                        <a href="./p3_Bacardi.php">
+                            <img src="./images/Bacardi.jpg" alt="Bacardi">
+                            <h4 class="aisle-text">Bacardi Rhum 1.14L</h4>
+                            <p class="aisle-text">$36.00/unit</p>
                         </a>
                     </div>
                 </div>
-
-
 
             </div>
 
