@@ -1,37 +1,4 @@
-<?php session_start(); ?>
-<!DocTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocolat Bars page</title>
-
-    <!-- boxicon link -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- import css -->
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- favicon (title of page image) -->
-    <link rel="icon" href="/images/favicon.JPG" sizes="32x32" type="image/JPG">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60=" crossorigin "anonymous"></script>
-    <script>
-        $(function() {
-            $('#footer').load("./assets/php/footer.php");
-        });
-        $(function() {
-            $('#header').load("./assets/php/header.php");
-        });
-    </script>
-</head>
-
-<body>
-    <!-- Header -->
-    <div id="header"></div>
-    <!--END OF HEADER-->
+<?php include('./assets/php/header.php'); ?>
 
 
     <main>
@@ -40,15 +7,15 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="./images/Bars.jpg" width="100%" id="ProductImg">
+                    <img src="./images/banana.jpg" width="100%" id="ProductImg">
                 </div>
 
 
                 <div class="col-2">
-                    <h2><a href="./index.php">Home</a>/<a href="./p2_SnacksAisle.php">Snacks</a>/Chocolat Bars</h2>
-                    <h1>Lindt Chocolat Bar</h1>
-                    <h4 style="display: none;" id="unitPrice">2.75</h4>
-                    <h4 class="product-price">$2.75 /<span>unit</span>
+                    <h2><a href="./index.php">Home</a>/<a href="./p2_fruitaisle.php">Fruits</a>/Banana</h2>
+                    <h1>Bananas</h1>
+                    <h4 style="display: none;" id="unitPrice">0.30</h4>
+                    <h4 class="product-price">$0.30 /<span>unit</span>
                     </h4>
                     <br>
                     <input id="quantity" type="number" min="0" value="1" onchange="updatePrice();saveValue(this)">
@@ -79,10 +46,11 @@
 
                 <div class="col-5">
                     <div class="product">
-                        <a href="./p3_Chips.php">
-                            <img src="./images/Chips.jpg" alt="BBQ Chips">
-                            <h4 class="aisle-text">BBQ Chips</h4>
-                            <p class="aisle-text">$4.59/bag</p>
+                        <a href="./p3_cucumber.php">
+                            <img src="./images/cucumber.jpg" alt="Cucumber">
+
+                            <h4 class="aisle-text">English Cucumbers</h4>
+                            <p class="aisle-text">$5.00/pack</p>
                         </a>
                     </div>
                 </div>
@@ -90,10 +58,10 @@
 
                 <div class="col-5">
                     <div class="product">
-                        <a href="./p3_Candies.php">
-                            <img src="./images/Candies.jpg" alt="Watermelon Candies">
-                            <h4 class="aisle-text">Watermelon Candies</h4>
-                            <p class="aisle-text">$4.50/bag</p>
+                        <a href="./p3_honeycrisp.php">
+                            <img src="./images/apple.jpg" alt="Honeycrisp Apple">
+                            <h4 class="aisle-text">Honeycrisp Apples</h4>
+                            <p class="aisle-text">$1.05/unit</p>
                         </a>
                     </div>
                 </div>
