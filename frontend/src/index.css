@@ -16,57 +16,6 @@ body {
 #root{
   height: 100%;
 }
-/* Layout */
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
-  grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
-}
-header {
-  grid-area: header;
-  background-color: #203040;
-}
-main {
-  grid-area: main;
-  padding: 1rem;
-}
-footer {
-  grid-area: footer;
-  background-color: #203040;
-  color: #ffffff;
-}
-/* Common */
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #ff8000;
-}
-/* Header */
-header a {
-  color: #ffffff;
-  padding: 1rem;
-}
-a.brand {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.row.center {
-  justify-content: center;
-}
-
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik:wght@300;400;500;600&display=swap");
 
@@ -443,7 +392,7 @@ Home
 
 .home {
   text-align: center;
-  background: url("/images/home-bg1.jpg");
+  background: url("../public/images/home-bg1.jpg");
   background-size: cover;
   padding-top: 4rem;
   padding-bottom: 5rem;
@@ -963,7 +912,7 @@ Special
 .featured {
   width: 55vw;
   height: 25rem;
-  background-image: url("/images/milk.jpg");
+  background-image: url("../public/images/milk.jpg");
   background-size: cover;
   background-position: top;
   border-radius: 0.5rem;
@@ -997,7 +946,7 @@ Special
 .sale {
   width: 35vw;
   height: 25rem;
-  background-image: url("/images/nut.jpg");
+  background-image: url("../public/images/nut.jpg");
   background-size: cover;
   border-radius: 0.5rem;
 }
