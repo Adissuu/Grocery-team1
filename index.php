@@ -1,6 +1,5 @@
 <?php include('./assets/php/header.php'); ?>
 
-
 <!-- HOME -->
 <div class="home" id="home">
     <div class="home-text">
