@@ -163,3 +163,4 @@ function updateTotalPriceCart()
     total = (1.15*(tot + tot2 + tot3)).toFixed(2);
     document.querySelector(".totalPrice").innerHTML = total;
 }
+
