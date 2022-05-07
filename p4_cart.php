@@ -128,6 +128,7 @@
     <!-End Of Footer->
 
         <script src="js/script.js"></script>
+        
 </body>
 
 </html>
